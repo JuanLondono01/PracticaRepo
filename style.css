@@ -1,3 +1,52 @@
-h2{
-    color: red;
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 80px;
+    width: 50%;
+    margin-inline: auto;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 8px;
+}
+
+nav a{
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    z-index: 1;
+}
+
+nav span{
+    height: 30px;
+    width: 80px;
+    position: absolute;
+    left: 526px;
+    top: 52px;
+    background: linear-gradient(45deg, #329f, #41a1);
+    border-radius: 8px;
+    transition: .5s ease;
+}
+
+nav a:nth-child(1):hover~span{
+    left: 526px;
+}
+
+nav a:nth-child(2):hover~span{
+    left: 620px;
+    width: 110px;
+}
+
+nav a:nth-child(3):hover~span{
+    left: 752px;
+}
+
+.active{
+    font-size: 4rem;
 }
